@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a82b9b9-fdcc-431b-87a7-4f382936bc53" name="Changes" comment="" />
+    <list default="true" id="9a82b9b9-fdcc-431b-87a7-4f382936bc53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApp/base/consumer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApp/base/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApp/base/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/ChatApp/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/ChatApp/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/ChatApp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/ChatApp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/ChatApp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/ChatApp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/base/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/base/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/base/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/base/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -18,13 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ankit/Ankit/projects/chat_app/backend/ChatApp/manage.py&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.manage.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/ankit/Ankit/projects/chat_app/backend/ChatApp/manage.py"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="backend" />
@@ -66,5 +83,26 @@
       <updated>1720455823321</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../env/lib/python3.12/site-packages/rest_framework/generics.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../env/lib/python3.12/site-packages/rest_framework/mixins.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ChatApp/base/serializers.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

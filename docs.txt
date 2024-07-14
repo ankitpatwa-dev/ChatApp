@@ -1,0 +1,16 @@
+
+python version 
+Python 3.12.3
+
+
+node version v20.15.1
+
+install redis
+https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/install-redis-on-linux/
+
+sudo service redis-server status
+sudo service redis-server start
+
+cmd: redis-cli
+output : 127.0.0.1:6379
+
