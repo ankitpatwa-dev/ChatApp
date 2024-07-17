@@ -1,11 +1,17 @@
 // src/components/ChatRoom.js
-import React, { useState } from 'react';
-import useWebSocket from '../hooks/useWebSocket';
+import React, { useEffect, useState } from 'react';
+import useWebSocket from '../services/webSocket';
 
-const ChatRoom = ({ roomName }) => {
-    const { messages, sendMessage } = useWebSocket(`ws://localhost:8000/ws/chat/${roomName}/`);
+const ChatRoom = (props) => {
+    // const { messages, sendMessage } = useWebSocket(`ws://localhost:8000/ws/chat/${props?.match.params.roomName}/`);
+    const { messages, sendMessage } = useWebSocket(`ws://localhost:8000/ws/chat/ak`);
     const [newMessage, setNewMessage] = useState('');
-
+    const [roomName, setRoomName] = useState('');
+    console.log('this is chatroom',roomName)
+    useEffect(()=>{
+        console.log('props.match.params.roomName',props.match?.params?.roomName);
+        setRoomName(props.match?.params?.roomName)
+    },[])
     const handleSend = () => {
         sendMessage(newMessage);
         setNewMessage('');

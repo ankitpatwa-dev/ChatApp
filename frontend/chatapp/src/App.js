@@ -8,7 +8,7 @@ import SingUp from './pages/signUp';
 import SingIn from './pages/singIn';
 import ChatRoom from './components/chatRoom';
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
     <div className="App">
@@ -20,7 +20,8 @@ function App() {
     <Route path="People" element={<People />} />
     <Route path="signin" element={<SingIn />} />
     <Route path="signup" element={<SingUp />} />
-    <Route path="/rooms/:roomName" render={(props) => <ChatRoom roomName={props.match.params.roomName} />} />
+    {/* <Route path="rooms/:roomName" render={(props) => <ChatRoom roomName={props.match.params.roomName} />} /> */}
+    <Route path="rooms/:roomName" element={<ChatRoom />}/>
 
      
     </Route>

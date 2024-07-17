@@ -14,6 +14,7 @@ const useWebSocket = (url) => {
 
         webSocket.current.onmessage = (event) => {
             const data = JSON.parse(event.data);
+            console.log('event',event)
             setMessages((prevMessages) => [...prevMessages, data.message]);
         };
 
@@ -27,6 +28,7 @@ const useWebSocket = (url) => {
     }, [url]);
 
     const sendMessage = (message) => {
+        console.log('message',message)
         if (webSocket.current.readyState === WebSocket.OPEN) {
             webSocket.current.send(JSON.stringify({ message }));
         }
