@@ -8,16 +8,20 @@ import { Outlet, Link,useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from 'react';
 // import {isAuthenticated, logout, } from '../services/authService';
 import authService from '../services/authService';
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
+import { removeInfo } from '../redux/slice/slices';
 
 function NavBar() {
     const navigate = useNavigate();
     const location = useLocation();
+    const dispatch = useDispatch()
     const user = useSelector(state => state); 
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     console.log('infoo',user);
     useEffect(() => {
-      setIsAuthenticated(authService.isAuthenticated());
+      if(user.userInfo.username){
+        setIsAuthenticated(true);
+      }
   }, [location.pathname]);
 
     // const isAuth = true;
@@ -31,7 +35,8 @@ function NavBar() {
 
   const handleLogout = () => {
     authService.logout();
-    setIsAuthenticated(false)
+    setIsAuthenticated(false);
+    dispatch(removeInfo())
     navigate('/')
 
   }

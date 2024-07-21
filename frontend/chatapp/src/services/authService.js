@@ -55,13 +55,25 @@ const getCurrentUser = () => {
     return JSON.parse(localStorage.getItem('user'));
 };
 
+const getCurrentUserInfo = () => {
+    const user = getCurrentUser();
+    
+    if (user && user.access){
+        const decoded = jwtDecode(user.access);
+        return decoded;
+    }
+    else{
+        return {};
+    }
+};
+
 
 const isAuthenticated = () => {
     const user = getCurrentUser();
     console.log(user);
     if (user && user.access) {
         try {
-            const decoded = jwtDecode(user.access);
+            const decoded = getCurrentUserInfo();
             // console.log('decode',decoded);
             // console.log(currentTime)
             const currentTime = Date.now() / 1000;
@@ -86,5 +98,6 @@ export default {
     getToken,
     setToken,
     getCurrentUser,
-    isAuthenticated
+    isAuthenticated,
+    getCurrentUserInfo,
 };
