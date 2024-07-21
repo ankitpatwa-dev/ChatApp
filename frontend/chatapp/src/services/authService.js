@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { jwtDecode } from "jwt-decode";
-
 const API_URL = 'http://localhost:8000/';
 
 
@@ -30,6 +29,7 @@ const login = (username, password) => {
 };
 
 const logout = () => {
+    console.log('logout')
     localStorage.removeItem('user');
 };
 
@@ -62,7 +62,8 @@ const isAuthenticated = () => {
     if (user && user.access) {
         try {
             const decoded = jwtDecode(user.access);
-            console.log('decode',decoded);
+            // console.log('decode',decoded);
+            // console.log(currentTime)
             const currentTime = Date.now() / 1000;
             if (decoded.exp < currentTime) {
                 logout();

@@ -6,9 +6,13 @@ import React, { useState } from 'react';
 import authService from '../services/authService';
 import Alert from 'react-bootstrap/Alert';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { jwtDecode } from 'jwt-decode';
+import { addInfo } from '../redux/slice/slices';
 
 function SingIn() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
@@ -20,7 +24,9 @@ function SingIn() {
 
     authService.login(username, password).then(
         response => {
-          console.log(response);
+          console.log('res',response);
+          const decoded = jwtDecode(response.access);
+          dispatch(addInfo(decoded))
             setMessage('Login successful');
             navigate('/');
         },

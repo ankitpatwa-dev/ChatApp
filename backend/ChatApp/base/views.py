@@ -29,6 +29,8 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 
         # Add custom claims
         token['username'] = user.username
+        token['firstName'] = user.first_name
+        token['lastName'] = user.last_name
         return token
 
 class MyTokenObtainPairView(TokenObtainPairView):
