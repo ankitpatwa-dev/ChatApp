@@ -1,6 +1,15 @@
 
+superuser
+username : ankit1
+password : ankit
+
+username : ankit
+password : ankit
+
 python version 
 Python 3.12.3
+
+
 
 
 node version v20.15.1

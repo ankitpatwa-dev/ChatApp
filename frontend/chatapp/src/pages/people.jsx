@@ -33,6 +33,7 @@ function People() {
   }
 
   const changePath = (path, person=false) => {
+    
     if(person)
       navigate(path+person)
   }
@@ -59,7 +60,8 @@ function People() {
                         Some quick example text to build on the card title and make up the
                         bulk of the card's content.
                       </Card.Text>
-                      <Card.Link href="/message/{person.id}" onClick={e => changePath('/message',person.id)}>Message</Card.Link>
+                      <Card.Link href="/rooms/{person.id}" onClick={e =>{ e.preventDefault();
+                         changePath('/rooms/',person.id)}}>Message</Card.Link>
                       <Card.Link href="#">Another Link</Card.Link>
                     </Card.Body>
                   </Card>

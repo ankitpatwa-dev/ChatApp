@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a82b9b9-fdcc-431b-87a7-4f382936bc53" name="Changes" comment="" />
+    <list default="true" id="9a82b9b9-fdcc-431b-87a7-4f382936bc53" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/base/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/base/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/base/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/base/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../docs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/chatapp/src/components/chatRoom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/chatapp/src/components/chatRoom.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/chatapp/src/pages/people.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/chatapp/src/pages/people.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/chatapp/src/services/webSocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/chatapp/src/services/webSocket.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +66,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
       </set>
     </attachedChunks>
   </component>
@@ -92,23 +101,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ChatApp/base/consumer.py</url>
-          <line>24</line>
+          <line>39</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ChatApp/base/consumer.py</url>
-          <line>36</line>
+          <line>76</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ChatApp/base/consumer.py</url>
-          <line>18</line>
+          <line>33</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ChatApp/base/consumer.py</url>
-          <line>7</line>
+          <line>14</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ChatApp/base/consumer.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
